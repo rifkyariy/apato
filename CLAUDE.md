@@ -2,6 +2,9 @@
 
 ## IMPORTANT: always use the `/ponytail` plugin to code
 
+Installed for this repo via `.claude/settings.json` (marketplace
+`dietrichgebert/ponytail`, plugin `ponytail@ponytail`).
+
 Before writing, editing or refactoring any code in this repository, invoke the
 `/ponytail` plugin and follow its workflow. Do not write code without it.
 If the plugin is not installed or available, stop and ask the user to enable it
@@ -23,3 +26,9 @@ houses, built from the "Apato Landlord Dashboard" design canvas
 
 Dependencies point inward only: app/presentation → application → domain;
 infrastructure implements domain interfaces.
+
+## Commands
+
+- `npm run dev` — dev server (http://localhost:3000)
+- `npm test` — domain unit tests (node:test)
+- `npm run typecheck`, `npm run build`

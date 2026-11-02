@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+  --color-ink: #12201a;
+  --color-muted: #5a6b63;
+  --color-line: #dde3e0;
+  --color-field: #cbd5d0;
+  --color-canvas: #f3f5f4;
+  --color-brand: #0f7a62;
+  --color-brand-dark: #0a5c49;
+  --color-brand-soft: #e2f2ec;
+  --color-mint: #a8d8c7;
+  --color-late: #e8743b;
+  --color-late-soft: #fbe3d4;
+  --color-late-ink: #8a3a10;
+  --color-neutral-soft: #eef2f0;
+}
+
+body { @apply bg-canvas text-ink font-sans tabular-nums; font-size: 15px; }
+:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 2px; }
+.input { @apply h-12 w-full rounded-lg border border-field bg-white px-3.5; }
+.btn-primary { @apply inline-flex h-11 items-center justify-center gap-2 rounded-lg px-4 font-semibold bg-brand text-white hover:bg-brand-dark disabled:opacity-60; }
+.btn-ghost { @apply inline-flex h-11 items-center justify-center gap-2 rounded-lg px-4 font-semibold border border-field bg-white; }
+.card { @apply rounded-xl border border-line bg-white p-5; }
